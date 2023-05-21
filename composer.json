@@ -1,0 +1,47 @@
+{
+  "name": "gerfey/laravel-param-converter",
+  "description": "Adding the ability to work with Symfony ParamConverter in Laravel.",
+  "license": "MIT",
+  "homepage": "https://vk.com/gerfey",
+  "keywords": ["Gerfey", "laravel", "param-converter"],
+  "authors": [
+    {
+      "name": "Alexander Levchenkov",
+      "email": "sanjia@live.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8 || ^9 || ^10",
+    "sensio/framework-extra-bundle": "^6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gerfey\\LaravelParamConverter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gerfey\\LaravelParamConverter\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Gerfey\\LaravelParamConverter\\LaravelParamConverterServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    },
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
