@@ -21,7 +21,8 @@ class LaravelParamConverterServiceProvider extends ServiceProvider
         } else {
             $publishPath = base_path('config/param-converter.php');
         }
-        $this->publishes([$this->configPath() => $publishPath]);
+
+        $this->publishes([$this->configPath() => $publishPath], 'param-converter');
 
         /** @var Router $router */
         $router = $this->app['router'];
