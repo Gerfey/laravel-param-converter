@@ -5,7 +5,13 @@
 
 Добавляем возможность работать c Symfony ParamConverter в Laravel.
 
-## Установка
+## Оглавление
+
+- [Основная информация / Basic information](README.md)
+- *Примеры / Examples*
+    - [Токен / Token](./docs/examples/token.md)
+
+## Установка / Installation
 
 Предпочтительный способ установки - через [Packagist][] и [Composer][]. Запустите
 следующую команду, чтобы установить пакет и добавить его в качестве require в
@@ -15,7 +21,7 @@
 composer require gerfey/laravel-param-converter
 ```
 
-## Настройка
+## Настройка / Configuration
 
 Вам нужно опубликовать конфигурацию, чтобы добавлять свои собственные преобразователи параметров. Конфигурация доступна по пути ```config/param-converter.php```
 
@@ -23,7 +29,7 @@ composer require gerfey/laravel-param-converter
 php artisan vendor:publish --tag="param-converter"
 ```
 
-## Собственные преобразователи параметров 
+## Собственные преобразователи параметров / Custom parameter converters
 
 Изучаем [документацию](http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html#creating-a-converter) по преобразователям.
 
